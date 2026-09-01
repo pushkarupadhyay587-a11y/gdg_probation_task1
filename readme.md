@@ -11,69 +11,69 @@ the given dataset contains :
 
 # Column-wise Analysis :
 
-# 1. Date / Accident Date
+## 1. Date / Accident Date
 - Trend: Peaks during festivals and seasonal travel.
 - Pattern: Accident frequency rises during high-mobility periods.
 
-# 2. State
+## 2. State
 - Distribution: High-traffic states dominate accident counts.
 - Most affected: Uttar Pradesh
 - Pattern: Dense road networks and large population increase exposure.
 
-# 3. City / District
+## 3. City / District
 - Distribution: Urban districts record more accidents.
 - Most affected: Dense urban and highway-connected districts
 - Pattern: Congestion and mixed traffic intensify crash risk.
 
-# 4. Time of Day
+## 4. Time of Day
 - Distribution: Evening and night record the highest accidents.
 - Peak time: 5–6 PM
 - Pattern: Traffic congestion, reduced visibility, and fatigue increase risk.
 
-# 5. Weather Condition
+## 5. Weather Condition
 - Distribution: Rain and fog worsen accident risk.
 - Conditions: ['Clear', 'Rainy', 'Hazy', 'Foggy', 'Stormy']
 - Pattern: Poor visibility and wet roads increase crash probability.
 
-# 6. Road Type
+## 6. Road Type
 - Distribution: Highways face severe collision patterns.
 - Road types: ['State Highway', 'Other District Road', 'National Highway', 'Village Road', 'Expressway']
 - Pattern: National and state highways report the highest severe crashes.
 
-# 7. Severity
+## 7. Severity
 - Distribution: Minor accidents are most common.
 - Pattern: Severe and fatal crashes are fewer but more damaging.
-# 8. Vehicle Type
+## 8. Vehicle Type
 - Distribution: Two-wheelers and cars dominate.
 - Pattern: Two-wheelers are more vulnerable; cars and buses contribute heavily.
-# 9. Driver Age
+## 9. Driver Age
 - Median: 30–35 years
 - Max: 60–65 years
 - Pattern: Most drivers are young adults (20–40).
 - Insight: Working-age drivers have higher exposure and road usage.
-# 10. Number of Vehicles Involved
+## 10. Number of Vehicles Involved
 - Pattern: One or two vehicles are most common.
 - Insight: Small-vehicle crashes dominate; multi-vehicle crashes are more severe.
 
-# 11. Number of Casualties
+## 11. Number of Casualties
 - Min: 0
 - Median: 1
 - Max: 4
 - Pattern: Most cases have low casualty counts.
 
-# 12. Number of Injured
+## 12. Number of Injured
 - Min: 0
 - Median: 1
 - Max: 3
 - Pattern: Minor injuries are most frequent.
 
-# 13. Speed Limit / Speed
+## 13. Speed Limit / Speed
 - Median: 57.3 km/h
 - Max: 101.2 km/h
 - Pattern: Higher speed significantly increases severity.
 - Insight: Overspeeding is a major factor in severe outcomes.
 
-#14. Alcohol Involved
+## 14. Alcohol Involved
 - Pattern: Alcohol-impaired driving increases accident severity.
 - Insight: Reaction time and judgment worsen under influence.
 
@@ -113,56 +113,56 @@ the given dataset contains :
 - Pattern: Response time varies significantly across cases.
 - Insight: Faster emergency response can reduce fatality risk.
 
-# 23. Insurance Claim Amount
+## 23. Insurance Claim Amount
 - Min: 0
 - Median: 29462
 - Max: 60000
 - Pattern: Most claims are moderate, while a few large claims dominate the upper range.
 
-# 24. Number of Injuries
+## 24. Number of Injuries
 - Min: 0
 - Median: 1
 - Max: 3
 - Pattern: Most accidents involve minor injuries.
 
-# 25. Driving Experience (years)
+## 25. Driving Experience (years)
 - Min: 0
 - Median: 16
 - Max: 16
 - Pattern: Moderate experience is common, but inexperience remains a risk factor.
 
-## Bivariate Analysis :
+# Bivariate Analysis :
 
-# 1. Alcohol vs Severity
+## 1. Alcohol vs Severity
 - Alcohol-related crashes show a higher share of severe and fatal outcomes.
 - Non-alcohol crashes are mostly minor and moderate.
 - Insight: Alcohol strongly increases crash severity.
 
-# 2. Speed vs Severity
+## 2. Speed vs Severity
 - Higher estimated speed is associated with higher accident severity.
 - Severe and fatal crashes occur at much higher speeds.
 - Insight: Overspeeding is a major severity driver.
 
-# 3. State vs Fatalities
+## 3. State vs Fatalities
 - Fatalities are concentrated in a few states.
 - Uttar Pradesh has the highest total fatalities.
 - Insight: Risk is uneven across regions.
 
-# 4. Year vs Accidents
+## 4. Year vs Accidents
 - Accident counts remain high across years with a gradual decline in recent years.
 - Insight: Safety has improved slightly, but risk remains significant.
 
-# 5. Hour vs Accidents
+## 5. Hour vs Accidents
 - Accident frequency peaks around 5–6 PM.
 - Evening rush hours are the most accident-prone.
 - Insight: Congestion and reduced visibility increase risk.
 
-# 6. Road Condition vs Severity
+## 6. Road Condition vs Severity
 - Poor road conditions are linked to more severe crashes.
 - Wet, loose, and under-construction roads increase serious outcomes.
 - Insight: Road quality directly affects crash severity.
 
-## Multivariate Analysis Insights
+# Multivariate Analysis Insights
 - `speed_limit_kmph` and `estimated_speed_kmph` is 0.77, showing that high-speed conditions are linked to more serious accidents.
 - `num_injuries` and `num_fatalities` have a correlation of 0.22, indicating that more severe crashes tend to produce more casualties.
 - Driver age and driving experience are highly correlated (0.97)
